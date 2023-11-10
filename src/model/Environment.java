@@ -50,7 +50,7 @@ public class Environment {
         for (Ant ant : ants) {
             // Lógica para el movimiento de las hormigas
             // Actualiza la posición de la hormiga según tu algoritmo
-            ant.move(ant.getPosX()+1, ant.getPosY()+1,this);
+            ant.move(this);
         }
     }
 
@@ -84,5 +84,9 @@ public class Environment {
             }
         }
         System.out.println();
+    }
+
+    public int[][] getPheromoneMatrix() {
+        return pheromoneMatrix;
     }
 }

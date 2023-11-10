@@ -20,10 +20,10 @@ public class AntColonyController {
         environment = new Environment(dimensionX, dimensionY);
 
          // Establecer las listas en el panel
-         antColonyPanel.setAnts(environment.getAnts());
-         antColonyPanel.setFoods(environment.getFoods());
+        antColonyPanel.setAnts(environment.getAnts());
+        antColonyPanel.setFoods(environment.getFoods());
 
-        Timer timer = new Timer(1000, new ActionListener() {
+        Timer timer = new Timer(100, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 // Lógica de la simulación: actualización del modelo
@@ -33,7 +33,7 @@ public class AntColonyController {
                 antColonyPanel.repaint();
 
 
-                environment.printPheromoneMatrix();
+                //environment.printPheromoneMatrix();
             }
         });
 
