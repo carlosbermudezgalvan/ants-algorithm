@@ -14,7 +14,7 @@ public class Environment {
 
         ants = new ArrayList<>();
         foods = new ArrayList<>();
-        pheromoneMatrix = new int[dimensionX][dimensionY];
+        pheromoneMatrix = new int[dimensionX/10][dimensionY/10];
         // Inicializa la matriz de feromonas u otros atributos según sea necesario
         initializeAntsAndFoods();  // Inicializa las hormigas y los alimentos
     }
@@ -50,7 +50,7 @@ public class Environment {
         for (Ant ant : ants) {
             // Lógica para el movimiento de las hormigas
             // Actualiza la posición de la hormiga según tu algoritmo
-            ant.move(ant.getPosX()+1, ant.getPosY()+1);
+            ant.move(ant.getPosX()+1, ant.getPosY()+1,this);
         }
     }
 
@@ -72,5 +72,17 @@ public class Environment {
         int x = ant.getPosX();
         int y = ant.getPosY();
         pheromoneMatrix[x][y]++;
+        
+    }
+
+    public void printPheromoneMatrix() {
+        System.out.println("Pheromone Matrix:");
+
+        for (int i = 0; i < 50; i += 1) {
+            for (int j = 0; j < 50; j += 1) {
+                System.out.print(pheromoneMatrix[i][j]);
+            }
+        }
+        System.out.println();
     }
 }

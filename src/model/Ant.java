@@ -17,14 +17,10 @@ public class Ant {
         return posY;
     }
 
-    public void move(int newX, int newY) {
-        // Método para mover la hormiga a una nueva posición
-        this.posX = newX;
-        this.posY = newY;
-    }
+   
 
     // Otros métodos y atributos según sea necesario
-    
+
     public void move(int newX, int newY, Environment environment) {
         // Método para mover la hormiga a una nueva posición
         environment.leavePheromone(this);  // Deja una feromona en la posición anterior
