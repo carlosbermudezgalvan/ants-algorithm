@@ -1,18 +1,46 @@
-## Getting Started
+# 🐜 Ant Colony Optimization (ACO) Implementation in Java
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## 🎯 Project Focus: Algorithmic Demonstration
 
-## Folder Structure
+This repository contains a **clear, functional Java implementation** of the **Ant Colony Optimization (ACO)** metaheuristic.
 
-The workspace contains two folders by default, where:
+ACO is a probabilistic technique used for solving computationally challenging **combinatorial optimization problems** (often classified as NP-hard). Key applications of this project include demonstrating solutions for these types of problems, such as the famous **Traveling Salesman Problem (TSP)**.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+**The primary goal of this project is to demonstrate:**
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+1.  A foundational understanding of **swarm intelligence** principles.
+2.  The ability to accurately translate complex **metaheuristic algorithms** into working code.
+3.  **Conceptual clarity** in the modeling of the ACO optimization process.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## ⚙️ Core Technical Features
 
-## Dependency Management
+The implementation models the foraging behavior of ant colonies to find optimal paths:
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+* **Pheromone Management:** Mechanisms for pheromone deposition, evaporation, and influence on path selection probability.
+* **Heuristic Information:** Integration of local heuristic data (e.g., distance between nodes) to guide the ants' movement.
+* **Solution Representation:** Effective graph modeling for the problem space (e.g., cities/nodes).
+* **Iterative Optimization:** Control structure for running multiple optimization cycles to find near-optimal solutions.
+
+## 🚀 Execution
+
+The project is designed to run out-of-the-box, initiating the simulation and optimization process.
+
+### Prerequisites
+
+* Java Development Kit (JDK) 8 or higher.
+
+### Steps
+
+1.  Clone the repository.
+2.  Open the project in your Java IDE.
+3.  Execute the main application file:
+    * `App.java`
+4.  The application will initialize the environment (ants, food sources, graph) and begin the iterative optimization process.
+
+---
+## Contribution & Contact
+
+This project is part of a personal portfolio showcasing complex algorithmic skills, aligned with future goals in Artificial Intelligence. Contributions, technical questions, and feedback are welcome.
+
+**Author:** Carlos Bermúdez
+**Email:** carlosbermudezgalvan132@gmail.com
