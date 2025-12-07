@@ -21,6 +21,12 @@ The implementation models the foraging behavior of ant colonies to find optimal 
 * **Solution Representation:** Effective graph modeling for the problem space (e.g., cities/nodes).
 * **Iterative Optimization:** Control structure for running multiple optimization cycles to find near-optimal solutions.
 
+## 📄 Design Documentation
+
+The architectural design and relationship between classes involved in the ACO implementation are documented in the repository:
+
+* **File:** `pdf-ants-diagram.pdf`
+
 ## 🚀 Execution
 
 The project is designed to run out-of-the-box, initiating the simulation and optimization process.
